@@ -20,23 +20,18 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 - Windows 10</b> (21H2)
 
-<h2>Post-Install Configuration Objectives</h2>
+<h2>Post-Install Configuration </h2>
 
 Part 1 (Create Virtual Machine in Azure)
-Create a Resource Group
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
+- Create a Resource Group
+- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
 When creating the VM, allow it to create a new Virtual Network (Vnet)
 
 Part 2 (Installation)
-Note: I wouldn't really consider this a “simple list” because the steps are just installing a bunch of prerequisite software, but you can use it as a guide to work through the lab. No need to try to memorize everything.
-
-
-Create an Azure Virtual Machine Windows 10, 4 vCPUs
-Name: Vm-osticket
-Username: labuser (for example/whatever you chose)
-Password: osTicketPassword1! (for example/whatever you chose)
-
-
+- Create an Azure Virtual Machine Windows 10, 4 vCPUs
+- Name: Vm-osticket
+- Username: labuser (for example/whatever you chose)
+- Password: osTicketPassword1! (for example/whatever you chose)
 
 Open this: Installation Files
 We will use these files to install osTicket and some of the dependencies. I’m using this offline version to make sure everyone is using the same version of all the files :)
@@ -44,11 +39,11 @@ We will use these files to install osTicket and some of the dependencies. I’m 
 Install / Enable IIS in Windows WITH
 CGI and Common HTTP Features
 World Wide Web Services -> Application Development Features ->
-[X] CGI
-[X] Common HTTP Features
+- [X] CGI
+- [X] Common HTTP Features
 AND IIS Management Console
 Internet Information Services -> Web Management Tools -> IIS Management Console
-	[X] IIS Management Console
+- [X] IIS Management Console
 
 
 From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
@@ -57,13 +52,7 @@ From the Installation Files, download and install the Rewrite Module (rewrite_am
 
 Create the directory C:\PHP
 
-From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
-!! ATTENTION !!
-If this appears, choose to “Keep” the file:
-
-
-
-If you are still having trouble downloading PHP 7.3.8, please try downloading and installing Google Chrome and doing it from within there. 
+From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP 
 
 From the Installation Files, download and install VC_redist.x86.exe.
 
